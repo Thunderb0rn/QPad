@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QPadClass</class>
+ <widget class="QMainWindow" name="QPadClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>618</width>
+    <height>702</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QPad</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="qpad.qrc">
+    <normaloff>:/QPad/icons/myappico.ico</normaloff>:/QPad/icons/myappico.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	background-color: #FFF
+}
+
+
+QStatusBar {
+	background-color: #FAFAFA;
+	color: #000
+}
+
+
+QMenu::item {
+	background-color: #FAFAFA;
+	color: #000
+}
+
+QMenu::item:selected {
+	background-color: #C8DCFA;
+	color: #000
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="textEdit">
+      <property name="cursor" stdset="0">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="tabStopDistance">
+       <double>20.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>618</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="a_create_file"/>
+    <addaction name="a_new_win"/>
+    <addaction name="a_open_file"/>
+    <addaction name="a_save_file"/>
+    <addaction name="a_save_as_file"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Edits</string>
+    </property>
+    <addaction name="a_past_time"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <widget class="QMenu" name="menuScale">
+     <property name="title">
+      <string>Scale</string>
+     </property>
+     <addaction name="a_scale_up"/>
+     <addaction name="a_scale_down"/>
+     <addaction name="a_scale_default"/>
+    </widget>
+    <addaction name="a_change_font"/>
+    <addaction name="menuScale"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menuView"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="a_create_file">
+   <property name="icon">
+    <iconset resource="qpad.qrc">
+     <normaloff>:/QPad/icons/note_add_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/QPad/icons/note_add_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Create</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="a_new_win">
+   <property name="text">
+    <string>New Window</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+N</string>
+   </property>
+  </action>
+  <action name="a_open_file">
+   <property name="icon">
+    <iconset resource="qpad.qrc">
+     <normaloff>:/QPad/icons/edit_document_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/QPad/icons/edit_document_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="a_save_file">
+   <property name="icon">
+    <iconset resource="qpad.qrc">
+     <normaloff>:/QPad/icons/save_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/QPad/icons/save_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="a_save_as_file">
+   <property name="text">
+    <string>Save As</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="a_past_time">
+   <property name="icon">
+    <iconset resource="qpad.qrc">
+     <normaloff>:/QPad/icons/schedule_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/QPad/icons/schedule_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Time &amp; Date</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="a_change_font">
+   <property name="icon">
+    <iconset resource="qpad.qrc">
+     <normaloff>:/QPad/icons/text_fields_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/QPad/icons/text_fields_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Font</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+F</string>
+   </property>
+  </action>
+  <action name="a_scale_up">
+   <property name="icon">
+    <iconset resource="qpad.qrc">
+     <normaloff>:/QPad/icons/add_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/QPad/icons/add_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Up</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+=</string>
+   </property>
+  </action>
+  <action name="a_scale_down">
+   <property name="icon">
+    <iconset resource="qpad.qrc">
+     <normaloff>:/QPad/icons/remove_FILL0_wght400_GRAD0_opsz24.svg</normaloff>:/QPad/icons/remove_FILL0_wght400_GRAD0_opsz24.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Down</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+-</string>
+   </property>
+  </action>
+  <action name="a_scale_default">
+   <property name="text">
+    <string>Default</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+0</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="qpad.qrc"/>
+ </resources>
+ <connections/>
+</ui>
