@@ -86,6 +86,8 @@
     <QtRcc Include="qpad.qrc" />
     <QtUic Include="qpad.ui" />
     <QtMoc Include="qpad.h" />
+    <ClCompile Include="codeEditor.cpp" />
+    <ClCompile Include="lineNumberArea.cpp" />
     <ClCompile Include="qpad.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -94,6 +96,8 @@
     <QtTranslation Include="ru_RU.ts" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="codeEditor.h" />
+    <ClInclude Include="lineNumberArea.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

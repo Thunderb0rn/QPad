@@ -9,6 +9,7 @@
 #include <qfileinfo.h>
 #include <qfontdialog.h>
 
+
 class QPad : public QMainWindow
 {
     Q_OBJECT
@@ -25,6 +26,7 @@ private:
     unsigned long scale;
     
     QFont font;
+    QFont numLine_font;
     QTranslator trans;
 
 
@@ -46,4 +48,6 @@ private slots:
 
     void insert_date();
     void setFont();
+
+    void setNumLine(bool state);
 };

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>618</width>
-    <height>702</height>
+    <width>576</width>
+    <height>629</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -43,7 +43,7 @@ QMenu::item:selected {
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
-     <widget class="QTextEdit" name="textEdit">
+     <widget class="CodeEditor" name="textEdit">
       <property name="cursor" stdset="0">
        <cursorShape>IBeamCursor</cursorShape>
       </property>
@@ -65,7 +65,7 @@ QMenu::item:selected {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>618</width>
+     <width>576</width>
      <height>22</height>
     </rect>
    </property>
@@ -99,6 +99,7 @@ QMenu::item:selected {
     </widget>
     <addaction name="a_change_font"/>
     <addaction name="menuScale"/>
+    <addaction name="a_numline_2"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
@@ -213,8 +214,43 @@ QMenu::item:selected {
     <string>Ctrl+0</string>
    </property>
   </action>
+  <action name="a_numline">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Number Line</string>
+   </property>
+  </action>
+  <action name="a_numline_2">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Number Line</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+M</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>CodeEditor</class>
+   <extends>QTextEdit</extends>
+   <header>codeEditor.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="qpad.qrc"/>
  </resources>

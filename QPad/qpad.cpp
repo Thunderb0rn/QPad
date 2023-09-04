@@ -3,6 +3,7 @@
 #include <qmessagebox.h>
 #include <qdatetime.h>
 #include <qprocess.h>
+#include "codeEditor.h"
 
 QPad::QPad(QWidget *parent)
     : QMainWindow(parent)
@@ -12,11 +13,16 @@ QPad::QPad(QWidget *parent)
     QApplication::removeTranslator(&trans);
     trans.load(QFileInfo(qApp->arguments().at(0)).path() + "/" + QLocale::system().name(), ".");
     QApplication::installTranslator(&trans);
+
+    ui.textEdit->setWordWrapMode(QTextOption::WordWrap);
     
     
     ui.retranslateUi(this);
 
     font = QFont("Segoe UI", 11, -1);
+    numLine_font = font;
+    numLine_font.setBold(true);
+    ui.textEdit->_setFont(numLine_font);
     def_scale = font.pointSize();
     scale = def_scale;
     
@@ -27,13 +33,15 @@ QPad::QPad(QWidget *parent)
     connect(ui.a_new_win, &QAction::triggered, this, &QPad::run_new);
     connect(ui.a_past_time, &QAction::triggered, this, &QPad::insert_date);
 
-    connect(ui.textEdit, &QTextEdit::textChanged, this, &QPad::update_title);
-    connect(ui.textEdit, &QTextEdit::cursorPositionChanged, this, &QPad::update_status);
+    connect(ui.textEdit, &CodeEditor::textChanged, this, &QPad::update_title);
+    connect(ui.textEdit, &CodeEditor::cursorPositionChanged, this, &QPad::update_status);
 
     connect(ui.a_scale_down, &QAction::triggered, this, &QPad::scale_down);
     connect(ui.a_scale_up, &QAction::triggered, this, &QPad::scale_up);
     connect(ui.a_scale_default, &QAction::triggered, this, &QPad::scale_default);
     connect(ui.a_change_font, &QAction::triggered, this, &QPad::setFont);
+
+    connect(ui.a_numline_2, &QAction::toggled, this, &QPad::setNumLine);
 
 
     
@@ -171,6 +179,8 @@ void QPad::scale_up()
     if (scale > 100) scale = 100;
     font.setPointSize(scale);
     ui.textEdit->setFont(font);
+    numLine_font.setPointSize(scale);
+    ui.textEdit->_setFont(numLine_font);
 
     this->update_status();
 }
@@ -182,6 +192,8 @@ void QPad::scale_down()
     if (scale < 1) scale = 1;
     font.setPointSize(scale);
     ui.textEdit->setFont(font);
+    numLine_font.setPointSize(scale);
+    ui.textEdit->_setFont(numLine_font);
     this->update_status();
 }
 
@@ -191,6 +203,8 @@ void QPad::scale_default()
     scale = def_scale;
     font.setPointSize(def_scale);
     ui.textEdit->setFont(font);
+    numLine_font.setPointSize(scale);
+    ui.textEdit->_setFont(numLine_font);
     this->update_status();
 }
 
@@ -220,6 +234,13 @@ void QPad::setFont()
     font_dialog.exec();
     font = font_dialog.currentFont();
     scale = font.pointSize();
+    numLine_font.setPointSize(scale);
+    ui.textEdit->_setFont(numLine_font);
     def_scale = scale;
     ui.textEdit->setFont(font);
+}
+
+void QPad::setNumLine(bool state)
+{
+    ui.textEdit->numberLneHide(state);
 }
