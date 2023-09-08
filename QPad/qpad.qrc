@@ -1,5 +1,8 @@
 <RCC>
   <qresource prefix="QPad">
+    <file>icons/skip_next.svg</file>
+    <file>icons/skip_previous.svg</file>
+    <file>icons/search.svg</file>
     <file>icons/add_FILL0_wght400_GRAD0_opsz24.svg</file>
     <file>icons/remove_FILL0_wght400_GRAD0_opsz24.svg</file>
     <file>icons/edit_document_FILL0_wght400_GRAD0_opsz24.svg</file>

@@ -4,51 +4,51 @@
 <context>
     <name>QPad</name>
     <message>
-        <location filename="qpad.cpp" line="57"/>
-        <location filename="qpad.cpp" line="92"/>
-        <location filename="qpad.cpp" line="112"/>
+        <location filename="qpad.cpp" line="65"/>
+        <location filename="qpad.cpp" line="100"/>
+        <location filename="qpad.cpp" line="120"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="qpad.cpp" line="57"/>
-        <location filename="qpad.cpp" line="92"/>
-        <location filename="qpad.cpp" line="112"/>
+        <location filename="qpad.cpp" line="65"/>
+        <location filename="qpad.cpp" line="100"/>
+        <location filename="qpad.cpp" line="120"/>
         <source>ERROR!</source>
         <translation>ERROR!</translation>
     </message>
     <message>
-        <location filename="qpad.cpp" line="132"/>
+        <location filename="qpad.cpp" line="140"/>
         <source>File not save.</source>
         <translation>File not save.</translation>
     </message>
     <message>
-        <location filename="qpad.cpp" line="133"/>
+        <location filename="qpad.cpp" line="141"/>
         <source>File</source>
         <translation>File </translation>
     </message>
     <message>
-        <location filename="qpad.cpp" line="134"/>
+        <location filename="qpad.cpp" line="142"/>
         <source>not save.</source>
         <translation> not save.</translation>
     </message>
     <message>
-        <location filename="qpad.cpp" line="134"/>
+        <location filename="qpad.cpp" line="142"/>
         <source>Do you want to save it ?</source>
         <translation>Do you want to save it?</translation>
     </message>
     <message>
-        <location filename="qpad.cpp" line="162"/>
+        <location filename="qpad.cpp" line="170"/>
         <source>Font Size: </source>
         <translation>Font Size: </translation>
     </message>
     <message>
-        <location filename="qpad.cpp" line="162"/>
+        <location filename="qpad.cpp" line="170"/>
         <source>str: </source>
         <translation>str: </translation>
     </message>
     <message>
-        <location filename="qpad.cpp" line="163"/>
+        <location filename="qpad.cpp" line="171"/>
         <source>, col: </source>
         <translation>, col: </translation>
     </message>
@@ -61,123 +61,144 @@
         <translation>QPad</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="67"/>
+        <location filename="qpad.ui" line="74"/>
         <source>File</source>
         <translation>File</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="77"/>
+        <location filename="qpad.ui" line="84"/>
         <source>Edits</source>
         <translation>Edits</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="83"/>
+        <location filename="qpad.ui" line="91"/>
         <source>View</source>
         <translation>View</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="87"/>
+        <location filename="qpad.ui" line="95"/>
         <source>Scale</source>
         <translation>Scale</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="103"/>
+        <location filename="qpad.ui" line="116"/>
         <source>Create</source>
         <translation>Create</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="106"/>
+        <location filename="qpad.ui" line="119"/>
         <source>Ctrl+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="111"/>
+        <location filename="qpad.ui" line="124"/>
         <source>New Window</source>
         <translation>New Window</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="114"/>
+        <location filename="qpad.ui" line="127"/>
         <source>Ctrl+Shift+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="119"/>
+        <location filename="qpad.ui" line="136"/>
         <source>Open</source>
         <translation>Open</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="122"/>
+        <location filename="qpad.ui" line="139"/>
         <source>Ctrl+O</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="127"/>
+        <location filename="qpad.ui" line="148"/>
         <source>Save</source>
         <translation>Save</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="130"/>
+        <location filename="qpad.ui" line="151"/>
         <source>Ctrl+S</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="135"/>
+        <location filename="qpad.ui" line="156"/>
         <source>Save As</source>
         <translation>Save As</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="138"/>
+        <location filename="qpad.ui" line="159"/>
         <source>Ctrl+Shift+S</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="143"/>
+        <location filename="qpad.ui" line="168"/>
         <source>Time &amp; Date</source>
         <translation>Time &amp; Date</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="146"/>
+        <location filename="qpad.ui" line="171"/>
         <source>F5</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="151"/>
+        <location filename="qpad.ui" line="180"/>
         <source>Font</source>
         <translation>Font</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="154"/>
+        <location filename="qpad.ui" line="183"/>
         <source>Ctrl+Shift+F</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="159"/>
+        <location filename="qpad.ui" line="192"/>
         <source>Up</source>
         <translation>Up</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="162"/>
+        <location filename="qpad.ui" line="195"/>
         <source>Ctrl+Shift+=</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="167"/>
+        <location filename="qpad.ui" line="204"/>
         <source>Down</source>
         <translation>Down</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="170"/>
+        <location filename="qpad.ui" line="207"/>
         <source>Ctrl+Shift+-</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="175"/>
+        <location filename="qpad.ui" line="212"/>
         <source>Default</source>
         <translation>Default</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="178"/>
+        <location filename="qpad.ui" line="215"/>
         <source>Ctrl+0</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="qpad.ui" line="229"/>
+        <location filename="qpad.ui" line="240"/>
+        <source>Number Line</source>
+        <translation>Number Line</translation>
+    </message>
+    <message>
+        <location filename="qpad.ui" line="243"/>
+        <source>Ctrl+Shift+M</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="qpad.ui" line="252"/>
+        <source>Search</source>
+        <translation>Search</translation>
+    </message>
+    <message>
+        <location filename="qpad.ui" line="255"/>
+        <source>Ctrl+F</source>
         <translation></translation>
     </message>
 </context>

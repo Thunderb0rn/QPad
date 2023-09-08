@@ -4,51 +4,51 @@
 <context>
     <name>QPad</name>
     <message>
-        <location filename="qpad.cpp" line="57"/>
-        <location filename="qpad.cpp" line="92"/>
-        <location filename="qpad.cpp" line="112"/>
+        <location filename="qpad.cpp" line="65"/>
+        <location filename="qpad.cpp" line="100"/>
+        <location filename="qpad.cpp" line="120"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="qpad.cpp" line="57"/>
-        <location filename="qpad.cpp" line="92"/>
-        <location filename="qpad.cpp" line="112"/>
+        <location filename="qpad.cpp" line="65"/>
+        <location filename="qpad.cpp" line="100"/>
+        <location filename="qpad.cpp" line="120"/>
         <source>ERROR!</source>
         <translation>ОШИБКА!</translation>
     </message>
     <message>
-        <location filename="qpad.cpp" line="132"/>
+        <location filename="qpad.cpp" line="140"/>
         <source>File not save.</source>
         <translation>Файл не сохранен.</translation>
     </message>
     <message>
-        <location filename="qpad.cpp" line="133"/>
+        <location filename="qpad.cpp" line="141"/>
         <source>File</source>
         <translation>Файл </translation>
     </message>
     <message>
-        <location filename="qpad.cpp" line="134"/>
+        <location filename="qpad.cpp" line="142"/>
         <source>not save.</source>
         <translation> не сохранен</translation>
     </message>
     <message>
-        <location filename="qpad.cpp" line="134"/>
+        <location filename="qpad.cpp" line="142"/>
         <source>Do you want to save it ?</source>
         <translation>Хотите ли Вы сохранить его?</translation>
     </message>
     <message>
-        <location filename="qpad.cpp" line="162"/>
+        <location filename="qpad.cpp" line="170"/>
         <source>Font Size: </source>
         <translation>Рзаер Шрифта: </translation>
     </message>
     <message>
-        <location filename="qpad.cpp" line="162"/>
+        <location filename="qpad.cpp" line="170"/>
         <source>str: </source>
         <translation>стр: </translation>
     </message>
     <message>
-        <location filename="qpad.cpp" line="163"/>
+        <location filename="qpad.cpp" line="171"/>
         <source>, col: </source>
         <translation>, стлб: </translation>
     </message>
@@ -61,123 +61,144 @@
         <translation>QPad</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="67"/>
+        <location filename="qpad.ui" line="74"/>
         <source>File</source>
         <translation>Файл</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="77"/>
+        <location filename="qpad.ui" line="84"/>
         <source>Edits</source>
         <translation>Правка</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="83"/>
+        <location filename="qpad.ui" line="91"/>
         <source>View</source>
         <translation>Вид</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="87"/>
+        <location filename="qpad.ui" line="95"/>
         <source>Scale</source>
         <translation>Маштаб</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="103"/>
+        <location filename="qpad.ui" line="116"/>
         <source>Create</source>
         <translation>Создать</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="106"/>
+        <location filename="qpad.ui" line="119"/>
         <source>Ctrl+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="111"/>
+        <location filename="qpad.ui" line="124"/>
         <source>New Window</source>
         <translation>Новое окно</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="114"/>
+        <location filename="qpad.ui" line="127"/>
         <source>Ctrl+Shift+N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="119"/>
+        <location filename="qpad.ui" line="136"/>
         <source>Open</source>
         <translation>Открыть</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="122"/>
+        <location filename="qpad.ui" line="139"/>
         <source>Ctrl+O</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="127"/>
+        <location filename="qpad.ui" line="148"/>
         <source>Save</source>
         <translation>Сохранить</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="130"/>
+        <location filename="qpad.ui" line="151"/>
         <source>Ctrl+S</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="135"/>
+        <location filename="qpad.ui" line="156"/>
         <source>Save As</source>
         <translation>Сохранит как</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="138"/>
+        <location filename="qpad.ui" line="159"/>
         <source>Ctrl+Shift+S</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="143"/>
+        <location filename="qpad.ui" line="168"/>
         <source>Time &amp; Date</source>
         <translation>Время и Дата</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="146"/>
+        <location filename="qpad.ui" line="171"/>
         <source>F5</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="151"/>
+        <location filename="qpad.ui" line="180"/>
         <source>Font</source>
         <translation>Шрифт</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="154"/>
+        <location filename="qpad.ui" line="183"/>
         <source>Ctrl+Shift+F</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="159"/>
+        <location filename="qpad.ui" line="192"/>
         <source>Up</source>
         <translation>Увеличить</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="162"/>
+        <location filename="qpad.ui" line="195"/>
         <source>Ctrl+Shift+=</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="167"/>
+        <location filename="qpad.ui" line="204"/>
         <source>Down</source>
         <translation>Уменьшить</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="170"/>
+        <location filename="qpad.ui" line="207"/>
         <source>Ctrl+Shift+-</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="175"/>
+        <location filename="qpad.ui" line="212"/>
         <source>Default</source>
         <translation>Сброс</translation>
     </message>
     <message>
-        <location filename="qpad.ui" line="178"/>
+        <location filename="qpad.ui" line="215"/>
         <source>Ctrl+0</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="qpad.ui" line="229"/>
+        <location filename="qpad.ui" line="240"/>
+        <source>Number Line</source>
+        <translation>Числовая Линия</translation>
+    </message>
+    <message>
+        <location filename="qpad.ui" line="243"/>
+        <source>Ctrl+Shift+M</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="qpad.ui" line="252"/>
+        <source>Search</source>
+        <translation>Поиск</translation>
+    </message>
+    <message>
+        <location filename="qpad.ui" line="255"/>
+        <source>Ctrl+F</source>
         <translation></translation>
     </message>
 </context>

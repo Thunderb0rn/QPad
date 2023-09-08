@@ -30,6 +30,7 @@ private:
     QTranslator trans;
 
 
+
 private slots:
     void update_title();
 

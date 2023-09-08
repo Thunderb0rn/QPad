@@ -15,6 +15,7 @@ QPad::QPad(QWidget *parent)
     QApplication::installTranslator(&trans);
 
     ui.textEdit->setWordWrapMode(QTextOption::WordWrap);
+
     
     
     ui.retranslateUi(this);
@@ -40,6 +41,7 @@ QPad::QPad(QWidget *parent)
     connect(ui.a_scale_up, &QAction::triggered, this, &QPad::scale_up);
     connect(ui.a_scale_default, &QAction::triggered, this, &QPad::scale_default);
     connect(ui.a_change_font, &QAction::triggered, this, &QPad::setFont);
+
 
     connect(ui.a_numline_2, &QAction::toggled, this, &QPad::setNumLine);
 
@@ -69,7 +71,7 @@ QPad::QPad(QWidget *parent)
 }
 
 QPad::~QPad()
-{}
+{ }
 
 void QPad::update_title()
 {
@@ -131,7 +133,7 @@ void QPad::save_file_as_action()
 void QPad::run_new()
 {
     QProcess proc(this);
-    proc.startDetached("./QPad.exe");
+    proc.startDetached(QFileInfo(qApp->arguments().at(0)).path() + "/QPad.exe");
 }
 
 void QPad::create_file_action()
@@ -178,9 +180,10 @@ void QPad::scale_up()
     scale++;
     if (scale > 100) scale = 100;
     font.setPointSize(scale);
-    ui.textEdit->setFont(font);
+    
     numLine_font.setPointSize(scale);
     ui.textEdit->_setFont(numLine_font);
+    ui.textEdit->setFont(font);
 
     this->update_status();
 }
@@ -191,9 +194,10 @@ void QPad::scale_down()
     scale--;
     if (scale < 1) scale = 1;
     font.setPointSize(scale);
-    ui.textEdit->setFont(font);
+    
     numLine_font.setPointSize(scale);
     ui.textEdit->_setFont(numLine_font);
+    ui.textEdit->setFont(font);
     this->update_status();
 }
 
@@ -202,9 +206,10 @@ void QPad::scale_default()
     ui.textEdit->selectAll();
     scale = def_scale;
     font.setPointSize(def_scale);
-    ui.textEdit->setFont(font);
+    
     numLine_font.setPointSize(scale);
     ui.textEdit->_setFont(numLine_font);
+    ui.textEdit->setFont(font);
     this->update_status();
 }
 
@@ -244,3 +249,4 @@ void QPad::setNumLine(bool state)
 {
     ui.textEdit->numberLneHide(state);
 }
+

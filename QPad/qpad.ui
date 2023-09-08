@@ -242,6 +242,18 @@ QMenu::item:selected {
     <string>Ctrl+Shift+M</string>
    </property>
   </action>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="qpad.qrc">
+     <normaloff>:/QPad/icons/search.svg</normaloff>:/QPad/icons/search.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Search</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
